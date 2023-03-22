@@ -1,0 +1,546 @@
+
+/**hacer resposiva la pag
+@media screen and (max-width: 1000px) {
+  table td {
+    display: block;
+    width: 100%;
+  }
+}*/
+/*reglas generales las que ya tenia*/
+*{ 
+    margin-left: 0px;
+    margin-top: 0px;    
+ }
+ *,*::before,*::after{
+  box-sizing: inherit;
+ }
+ html{
+  min-height: 100%;
+  position: relative;
+ }
+ body{
+  height: 100%;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+   max-width: 1500px;
+
+}
+/*Media Query*/
+
+h1,h2{
+    font-family: 'Times New Roman', Times, serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    text-align: center;
+
+  }
+
+  
+.button {
+  font-weight: 600;
+  font-size: 20px;
+  color:#fffbfb;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:2px;
+  padding-right:2px;
+  background-color:#189226;
+  border-color: #83c132;
+  border-width: 1px;
+  border-style: solid;
+  border-radius:5px;
+  position: relative;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: small;
+
+}
+.button:hover{
+  opacity: 0.6;
+  cursor: auto;
+
+ /** box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:#ffffff;
+  color: #138f21;*/
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    border-radius:30px;
+    background-size: contain ;
+
+    }
+
+    .hero{
+      grid-column:1/19;
+      grid-row: 1/5;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("principal 1.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: center;
+
+    }
+ 
+
+  .img1 {
+    grid-column:2/12;
+    grid-row: 1/4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto1.jpg");
+    background-size: 98% 100%;
+    border-radius: 5px;
+   }
+  .txt1 {
+    grid-column:11/18;
+    grid-row: 1/4;
+    background-color: #037BC0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relat;
+    text-align: center;
+    color: white;
+    align-content:center;
+    padding-top:60px;
+    border-radius: 5px;
+    } 
+
+    .txt1:hover{
+      grid-column:7/18;
+      
+    }
+  .img2 {
+      grid-column:2/10;
+      grid-row: 4/7;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto2.jpg");
+      background-size: 100% 68%;
+      border-radius: 5px;
+    }  
+  .img3 {
+      grid-column:10/18;
+      grid-row: 4/7;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto3.jpg");
+      background-size: 100% 68%;
+      border-radius: 5px;
+    }
+    .txt2 {
+      grid-column:2/10;
+      grid-row: 6/7;
+      background-color: #037BC0;
+      font-family: Arial, Helvetica, sans-serif;
+      position: relative;
+      text-align: center;
+      color: white;
+      align-content: center;
+      border-radius: 8px;
+      padding-top:4px;
+      background-size: cover;
+      padding-block-end: 9px;
+      padding-left: 4px;
+      padding-right: 4px;
+      }
+      .txt3 {
+        grid-column:10/18;
+        grid-row: 6/7;
+        background-color: #037BC0;
+        font-family: Arial, Helvetica, sans-serif, small;
+
+        position: relat;
+        text-align: center;
+        color: white;
+        align-content: center;
+        border-radius: 8px;
+        padding-top:4px;
+        }
+    .img4 {
+      grid-column:2/7;
+      grid-row: 7/10;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto4.jpg");
+      background-size: 100% 58%;
+      border-radius: 5px;
+        }
+    .img5 {
+      grid-column:7/13;
+      grid-row: 7/10;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto5.jpg");
+      background-size: 100% 58%;
+      border-radius: 5px;
+        }
+    .img6 {
+      grid-column:13/18;
+      grid-row: 7/10;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto6.jpg");
+      background-size: 100% 58%;
+      border-radius: 5px;
+        }
+      .txt4 {
+        grid-column:2/7;
+        grid-row: 9/10;
+        background-color: #037BC0;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relat;
+        text-align: center;
+        color: white;
+        align-content: center;
+        border-radius: 8px;
+        padding-top:25px;
+        }
+      .txt5 {
+        grid-column:7/13;
+        grid-row: 9/10;
+        background-color: #037BC0;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relat;
+        text-align: center;
+        color: white;
+        align-content: center;
+        border-radius: 8px;
+        padding-top:25px;
+        }
+      .txt6 {
+        grid-column:13/18;
+        grid-row: 9/10;
+        background-color: #037BC0;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relat;
+        text-align: center;
+        color: white;
+        align-content: center;
+        border-radius: 8px;
+        padding-top:25px;
+        }
+        .img7 {
+          grid-column:2/7;
+          grid-row: 1/3;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("categoria1.jpg");
+          background-size: 100% 100%;
+          border-radius: 5px;
+            }
+        .img8 {
+          grid-column:7/13;
+          grid-row: 1/3;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("categoria2.jpg");
+          background-size: 100% 100%;
+          border-radius: 5px;
+            }
+        .img9 {
+          grid-column:13/18;
+          grid-row: 1/3;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("categoria3.jpg");
+          background-size: 100% 100%;
+          border-radius: 5px;
+            }
+      .txt7 {
+        grid-column:2/7;
+        grid-row: 3;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relat;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        align-content: center;
+        } 
+      .txt8 {
+        grid-column:7/13;
+        grid-row: 3;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relat;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        align-content: center;
+        } 
+      .txt9 {
+        grid-column:13/18;
+        grid-row: 3;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relat;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        align-content: center;
+        } 
+
+         
+.item1{
+  grid-column:2/7;
+  grid-row: 3/6;
+  font-family: 'Times New Roman', Times, serif;
+  position: relat;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  align-content: auto;
+  padding-top:50px;
+
+  font: #189226;
+}
+.item2{
+  grid-column:7/13;
+  grid-row: 3/6;
+  font-family:'Times New Roman', Times, serif;
+  position: relat;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  align-content: center;
+  padding-top:50px;
+  padding-right: 4px;
+}
+.item3{
+  grid-column:13/18;
+  grid-row: 3/6;
+  font-family: 'Times New Roman', Times, serif;
+  position: relat;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  align-content: auto;
+  padding-top:50px;
+
+  font: #189226;
+}
+
+footer {
+  background-color: rgb(235, 235, 235);
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  color: rgb(39, 39, 39);
+  padding-top:5px;
+}
+
+.text-center {
+  text-align: center;
+  font-size: small;
+}
+
+
+
+
+/**
+este es el que ncesito par las cajas de texto de abqajo
+div{
+    position: relative; 
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: inlSine-block;
+    display: block;
+      background: rgba(229, 231, 235, 0.841);
+
+*/
+@media screen and (max-width: 1000px) {
+
+    body{
+      margin: 0;
+     }
+  
+}
+
+@media screen and (max-width: 800px) {
+  body{
+    background-color: #189226;
+  }
+  .img1 {
+    grid-column:2/12;
+    grid-row: 1/3;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto1.jpg");
+    background-size: 98% 100%;
+    border-radius: 5px;
+   }
+  .txt1 {
+    grid-column:11/18;
+    grid-row: 1/3;
+    background-color: #037BC0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relat;
+    text-align: center;
+    color: white;
+    align-content:center;
+    padding-top:60px;
+    border-radius: 5px;
+    } 
+
+  .img2 {
+    grid-column:2/12;
+    grid-row: 3/5;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto2.jpg");
+    background-size: 100% 68%;
+    border-radius: 5px;
+  }  
+.img3 {
+    grid-column:2/12;
+    grid-row: 5/7;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto3.jpg");
+    background-size: 100% 68%;
+    border-radius: 5px;
+  }
+  .txt2 {
+    grid-column:11/18;
+    grid-row:3/5;
+    background-color: #037BC0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    color: white;
+    align-content: center;
+    border-radius: 8px;
+    padding-top:4px;
+    background-size: cover;
+    padding-block-end: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    }
+    .txt3 {
+      grid-column:11/18;
+      grid-row: 5/7;
+      background-color: #037BC0;
+      font-family: Arial, Helvetica, sans-serif, small;
+
+      position: relat;
+      text-align: center;
+      color: white;
+      align-content: center;
+      border-radius: 8px;
+      padding-top:4px;
+      }
+  .img4 {
+    grid-column:2/12;
+    grid-row: 9/11;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto4.jpg");
+    background-size: 100% 58%;
+    border-radius: 5px;
+      }
+  .img5 {
+    grid-column:2/12;
+    grid-row: 13/16;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto5.jpg");
+    background-size: 100% 58%;
+    border-radius: 5px;
+      }
+  .img6 {
+    grid-column:2/12;
+    grid-row: 16/19;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("producto6.jpg");
+    background-size: 100% 58%;
+    border-radius: 5px;
+      }
+    .txt4 {
+      grid-column:11/18;
+      grid-row: 10/13;
+      background-color: #037BC0;
+      font-family: Arial, Helvetica, sans-serif;
+      position: relat;
+      text-align: center;
+      color: white;
+      align-content: center;
+      border-radius: 8px;
+      padding-top:25px;
+      }
+    .txt5 {
+      grid-column:11/18;
+      grid-row: 13/16;
+      background-color: #037BC0;
+      font-family: Arial, Helvetica, sans-serif;
+      position: relat;
+      text-align: center;
+      color: white;
+      align-content: center;
+      border-radius: 8px;
+      padding-top:25px;
+      }
+    .txt6 {
+      grid-column:11/18;
+      grid-row: 16/19;
+      background-color: #037BC0;
+      font-family: Arial, Helvetica, sans-serif;
+      position: relat;
+      text-align: center;
+      color: white;
+      align-content: center;
+      border-radius: 8px;
+      padding-top:25px;
+      }
+      .img7 {
+        grid-column:4/16;
+        grid-row: 1/3;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("categoria1.jpg");
+        background-size: 100% 100%;
+        border-radius: 5px;
+          }
+      .img8 {
+        grid-column:4/16;
+        grid-row: 3/5;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("categoria2.jpg");
+        background-size: 100% 100%;
+        border-radius: 5px;
+          }
+      .img9 {
+        grid-column:4/16;
+        grid-row: 5/7;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("categoria3.jpg");
+        background-size: 100% 100%;
+        border-radius: 5px;
+          }
+
+
+       
+.item1{
+grid-column:2/7;
+grid-row: 7/10;
+font-family: 'Times New Roman', Times, serif;
+position: relat;
+text-align: center;
+color: rgb(0, 0, 0);
+align-content: auto;
+padding-top:50px;
+
+font: #189226;
+}
+.item2{
+grid-column:7/13;
+grid-row: 7/10;
+font-family:'Times New Roman', Times, serif;
+position: relat;
+text-align: center;
+color: rgb(0, 0, 0);
+align-content: center;
+padding-top:50px;
+padding-right: 4px;
+}
+.item3{
+grid-column:13/18;
+grid-row: 7/10;
+font-family: 'Times New Roman', Times, serif;
+position: relat;
+text-align: center;
+color: rgb(0, 0, 0);
+align-content: auto;
+padding-top:50px;
+
+font: #189226;
+}
+
+footer {
+background-color: rgb(235, 235, 235);
+position:absolute;
+bottom: 0;
+width: 100%;
+height: 30px;
+color: rgb(39, 39, 39);
+padding-top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

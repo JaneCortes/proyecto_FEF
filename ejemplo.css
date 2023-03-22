@@ -1,0 +1,76 @@
+/*reglas generales*/
+body{
+    margin: 0;
+    padding: 0;
+}
+/*Media Query*/
+img{
+    position: relative;
+    width: 100ww;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/** Reescribir colores */
+
+/** Productos */
+
+
+
+/**Seudo-clases y seudo-elementos**/
+selector:seudo-clase { color: red }
+selector:seudo-elemento { color: blue }
+    /**html______________________________________________
+    selector.clase:seudo-clase { propiedad: valor } 
+    selector.clase:seudo-elemento { propiedad: valor }**/
+
+
+
+/**para un solo elemento**/
+
+#svp94O { text-indent: 3em }
+
+
+/**seudo-clases**/
+A:link    { color: red }
+A:active  { color: blue; font-size: 125% }
+A:visited { color: green; font-size: 85% }
+
+/** ya lo tenuia en html maqueta**/
+
+titulo{
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    text-align: center;
+}
+#muebles{
+    color: #037BC0;
+}
+
+H4{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+position: relative;
+text-align: center;
+width: 90px;
+height: 30px;
+
+color: #037BC0;
+}
+body{
+margin: 0px;
+padding: 0px;
+}
+
+img{
+position: relative;
+width: 100%;
+height: 50vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.padre:after{
+    content:"Contenido insertado tras el contenido de los elementos '.padre'";
+    color:#009cde;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.padre:before{
+    content:"Contenido insertado antes del contenido de los elementos '.padre'";
+    color:#0000ff;
+    font-style: italic;
+    font-size: 0.8rem;
+
+}
+    </style>
+    <div id="abuelo">
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <div class="padre">
+            <div class="hijo"><a title="Título hijo1">HIJO1</a></div>
+            <div class="hijo"><a>HIJO2</a></div>
+            <div class="hijo"><a>HIJO3</a></div>
+        </div>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+        <div class="padre">
+            <div class="hijo"><a title="Título hijo4">HIJO4</a></div>
+            <div class="hijo"><a>abuelo </a></div>
+            <div class="hijo"><a>HIJO6</a></div>
+        </div>
+        <p>Párrafo 5</p>
+        <p>Párrafo 6</p>
+    </div>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
